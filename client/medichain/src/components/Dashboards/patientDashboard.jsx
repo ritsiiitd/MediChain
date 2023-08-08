@@ -16,28 +16,10 @@ const PatientDashboard = () => {
         return <div>Loading ...</div>;
       }
 
-
-    //   return (
-    //     <Route
-    //       {...rest}
-    //       render={({ location }) =>
-    //         isAuthenticated ? (
-    //           children
-    //         ) : (
-    //           <Redirect to={{ pathname: '/login', state: { from: location } }} />
-    //         )
-    //       }
-    //     />
-    //   );
-    // if (!isAuthenticated) {
-        
-    //     navigate('/');
-    //     return <></>;
-    // }
   return (
     <>
         <div>
-            <h1>User Logged In hai</h1>
+            <h1 className='text-3xl font-bold underline text-yellow-500'>User Logged In hai</h1>
             <img src={user.picture} alt={user.name} />
             {/* <h1></h1> */}
             <h2>{user.name}</h2>

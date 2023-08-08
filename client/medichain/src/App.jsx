@@ -11,7 +11,7 @@ function App() {
 
   return (
       <div className="wrapper">
-      <h1>Application</h1>
+      <h1 className='text-yellow'>Application</h1>
       {/* <Login/> */}
       <BrowserRouter>
         <Routes>
