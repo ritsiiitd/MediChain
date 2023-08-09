@@ -1,9 +1,10 @@
 import  Login  from "./Login.jsx";
 import  Logout  from "./Logout.jsx";
+import  Signup  from "./Signup.jsx";
 
 export {
     Login,
-    Logout
+    Logout,Signup
 }
 
 // export default Logout;

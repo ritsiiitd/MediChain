@@ -15,19 +15,24 @@ const PatientDashboard = () => {
     if (isLoading) {
         return <div>Loading ...</div>;
       }
-
-  return (
-    <>
-        <div>
-            <h1 className='text-3xl font-bold underline text-yellow-500'>User Logged In hai</h1>
-            <img src={user.picture} alt={user.name} />
-            {/* <h1></h1> */}
-            <h2>{user.name}</h2>
-            <p>{user.email}</p>
-            <Logout/>
-        </div>
-    </>
-  )
+      if(isAuthenticated){
+        return (
+          <>
+              <div>
+                  <h1 className='text-3xl font-bold underline text-yellow-500'>User Logged In hai</h1>
+                  <img src={user.picture} alt={user.name} />
+                  {/* <h1></h1> */}
+                  <h2>{user.name}</h2>
+                  <p>{user.email}</p>
+                  <Logout/>
+              </div>
+          </>
+        )
+      }
+      return(
+        <></>
+      );
+  
 }
 
 export default PatientDashboard;
