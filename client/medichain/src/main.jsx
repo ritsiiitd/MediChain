@@ -15,8 +15,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           domain='dev-e8yp6sp464fgsn24.us.auth0.com'
           clientId='R8fkPduEfZJzTI3MDh9StZ4fYC45RCdL'
           authorizationParams={{
-            redirect_uri: 'http://localhost:5173/dashboard'
+            redirect_uri: 'http://localhost:5173/dashboard',
+            audience: "https://dev-e8yp6sp464fgsn24.us.auth0.com/api/v2/",
+            // scope: "read:current_user update:current_user_metadata"
           }}
+          
           >
           <StateContextProvider>
             <App />
